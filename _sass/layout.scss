@@ -14,7 +14,9 @@ h1.title, h2.title, h3.title, h4.title, h5.title, h6.title{
 p{
   margin-bottom: 1.5rem;
 }
-
+.navbar{
+  z-index: 100;
+}
 .navbar-brand{
   .navbar-item{
     margin-left: 1rem;
@@ -38,16 +40,21 @@ p{
     color: $grey-dark;
   }
 }
-h1{
+
+h1, h2{
   .bar {
     width: 2.1875rem;
     border: 0;
     border-bottom: 5px solid;
     margin-top: 1rem;
   }
-  &.is-1 .bar{
+  &.is-size-1 .bar{
     width: 3rem;
-    border-bottom: 8px solid;
+    border-bottom: .9rem solid;
+  }
+  &.is-size-2 .bar{
+    width: 2.8rem;
+    border-bottom: .5rem solid;
   }
 }
 blockquote{
@@ -78,4 +85,57 @@ blockquote{
 }
 .button{
   font-weight: bold;
+}
+
+// FIFTY CUSTOM CSS
+#fifty-logo{
+  width: 75%;
+  display: block;
+  margin: 0 auto;
+}
+.navbar-item{
+  text-transform: uppercase;
+}
+.details-wrap{
+  background-color: $grey-light;
+}
+.details{
+  position: relative;
+  background-color: $grey-light;
+  height: 53rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  @include responsive(wide-screens){
+    height: 41rem;
+  }
+  @include clearfix;
+  &--detail{
+    position: absolute;
+    z-index: 10;
+    background-color: white;
+    min-height: 10rem;
+    width: 80%;
+    top: 17rem;
+    @include responsive(wide-screens){
+      top: 15rem;
+      width: 85%;
+    }
+    @include responsive(ultra-wide-screens){
+      top: 12rem;
+    }
+    left: 6rem;
+    padding: 2rem;
+  }
+}
+.dai-box{
+  border: 9px solid white;
+  width: 85%;
+  height: 20rem;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  padding: 1rem;
+}
+.footer{
+  background-color: $grey-dark;
 }

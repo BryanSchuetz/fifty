@@ -27,16 +27,23 @@
     <div class="navbar-end">
 
       <a class="navbar-item">
-        Home
+        50 Things
       </a>
         <span class="item-divider">|</span>
       <a class="navbar-item">
-        Documentation
+        Our Mosaic
       </a>
         <span class="item-divider">|</span>
-          <div class="navbar-item has-dropdown is-hoverable">
+      <a href="" class="navbar-item">
+        History
+      </a>
+      <span class="item-divider">|</span>
+      <a href="" class="navbar-item">
+        Updates
+      </a>
+          {%- comment -%} <div class="navbar-item has-dropdown is-hoverable">
         <a class="navbar-link">
-          More
+          Updates
         </a>
 
         <div class="navbar-dropdown is-right">
@@ -54,11 +61,16 @@
             Report an issue
           </a>
         </div>
-      </div>      
+      </div>       {%- endcomment -%}
     </div>
   </div>
 </nav>
     {{ content}}
+  <footer class="footer is-grey-dark">
+    <div class="content has-text-centered">
+      
+    </div>
+  </footer>
   </body>
 </html>
 
