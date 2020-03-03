@@ -1,6 +1,6 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "A DAI Style Framework" # the name of your site, e.g. ACME Corp.
+title: "Fifty Years. One Purpose. One DAI." # the name of your site, e.g. ACME Corp.
 destination: "build"
 exclude:
   - node_modules

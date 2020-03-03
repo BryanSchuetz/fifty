@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Common Framework Components"
+title: "Fifty Years. One Purpose. One DAI."
 ---
 <section class="hero is-light">
   <div class="hero-body">
@@ -18,12 +18,13 @@ title: "Common Framework Components"
       </h1>
     </div>
       <div class="details--detail">
-        <h2 class="title">Introducing DAI@50
+        <h2 class="title">Our Story
           <hr class="bar">
         </h2>
         <p>Fifty years ago, DAI was three founders and one idea. The idea was simple: <strong>do development differently and do it better</strong>. Don Mickelwait, John Buck, and Charlie Sweet called their new company Development Alternatives Incorporated. DAI.</p>
+        <img src="/assets/images/founders.jpg" alt="">
         <p>In the five decades since that day in May 1970, we have worked in virtually every country on the planet (still waiting on you Taiwan). Despite some false starts and failed experiments, we have enjoyed enormous success and grown beyond the wildest dreams of the founders. We have evolved beyond all recognition.</p>
-        <a href="" class="button is-solid is-link">Read More</a>
+        <a href="/our-story" class="button is-solid is-link">Read More</a>
       </div>
   </section>
 </div>

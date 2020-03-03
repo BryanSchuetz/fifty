@@ -5,6 +5,9 @@ h1.title, h2.title, h3.title, h4.title, h5.title, h6.title{
   color: $grey-dark;
 }
 
+img{
+  margin-bottom: 1rem;
+}
 // blockquote{
 //   margin-left: 2rem;
 //   border-left: .5rem solid $grey-dark;
@@ -102,13 +105,16 @@ blockquote{
 .details{
   position: relative;
   background-color: $grey-light;
-  height: 53rem;
+  height: 65rem;
   max-width: 1200px;
   margin: 0 auto;
-  @include responsive(wide-screens){
-    height: 41rem;
-  }
   @include clearfix;
+  @include responsive(wide-screens){
+    height: 67rem;
+  }
+  @include responsive(ultra-wide-screens){
+    height: 70rem;
+  }
   &--detail{
     position: absolute;
     z-index: 10;
@@ -127,10 +133,16 @@ blockquote{
     padding: 2rem;
   }
 }
+.detail-story{
+  height: 140rem;
+  @include responsive(wide-screens){
+    height: 110rem;
+  }
+}
 .dai-box{
   border: 9px solid white;
   width: 85%;
-  height: 20rem;
+  height: 70%;
   position: absolute;
   top: 3rem;
   left: 3rem;
