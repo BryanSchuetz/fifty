@@ -94,62 +94,82 @@ blockquote{
 
 // FIFTY CUSTOM CSS
 #fifty-logo{
-  width: 75%;
+  width: 100%;
   display: block;
   margin: 0 auto;
 }
 .navbar-item{
   text-transform: uppercase;
 }
-.details-wrap{
+.feature-wrap{
   background-color: $grey-light;
 }
-.details{
-  position: relative;
-  background-color: $grey-light;
-  height: 65rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  @include clearfix;
-  @include responsive(wide-screens){
-    height: 67rem;
-  }
-  @include responsive(ultra-wide-screens){
-    height: 70rem;
-  }
+.feature{
+  padding: 2rem 0 4rem 0;
   &--detail{
-    position: absolute;
-    z-index: 10;
     background-color: white;
-    min-height: 10rem;
-    width: 80%;
-    top: 17rem;
-    @include responsive(wide-screens){
-      top: 15rem;
-      width: 85%;
+    padding: 2rem 3rem 3rem 2rem;
+    width: 104%;
+    position: relative;
+    top: 2rem;
+    img{
+      width: 80%;
+      display: block;
+      margin: 0 auto 1rem auto;
     }
-    @include responsive(ultra-wide-screens){
-      top: 12rem;
-    }
-    left: 6rem;
-    padding: 2rem;
   }
 }
-.detail-story{
-  height: 140rem;
-  @include responsive(wide-screens){
-    height: 110rem;
-  }
-}
+// .details{
+//   position: relative;
+//   background-color: $grey-light;
+//   height: 65rem;
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   @include clearfix;
+//   @include responsive(wide-screens){
+//     height: 67rem;
+//   }
+//   @include responsive(ultra-wide-screens){
+//     height: 70rem;
+//   }
+//   &--detail{
+//     position: absolute;
+//     z-index: 10;
+//     background-color: white;
+//     min-height: 10rem;
+//     width: 80%;
+//     top: 17rem;
+//     @include responsive(wide-screens){
+//       top: 15rem;
+//       width: 85%;
+//     }
+//     @include responsive(ultra-wide-screens){
+//       top: 12rem;
+//     }
+//     left: 6rem;
+//     padding: 2rem;
+//   }
+// }
+// .detail-story{
+//   height: 140rem;
+//   @include responsive(wide-screens){
+//     height: 110rem;
+//   }
+// }
 .dai-box{
   border: 9px solid white;
-  width: 85%;
-  height: 70%;
-  position: absolute;
-  top: 3rem;
-  left: 3rem;
-  padding: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  // width: 85%;
+  // height: 70%;
+  // position: absolute;
+  // top: 3rem;
+  // left: 3rem;
+  // padding: 1rem;
 }
 .footer{
   background-color: $grey-dark;
+}
+iframe.timeline{
+
 }
