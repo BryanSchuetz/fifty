@@ -5,20 +5,18 @@ title: "Fifty Years. One Purpose. One DAI."
 <section class="hero is-light">
   <div class="hero-body">
     <div class="container">
-    <img id="fifty-logo" src="/assets/images/fifty.svg" alt="">
     </div>
   </div>
 </section>
-<div class="details-wrap">
-  <section class="details detail-story">
+<div class="feature-wrap">
+  <section class="feature container">
     <div class="dai-box">
       <h1 class="title is-size-2">
         FIFTY YEARS. ONE PURPOSE. ONE DAI.
         <hr class="bar">
       </h1>
-    </div>
-      <div class="details--detail">
-        <h2 class="title">Our Story
+      <div class="feature--detail">
+        <h2 class="title" id="our-story">Our Story
           <hr class="bar">
         </h2>
         <p>Fifty years ago, DAI was three founders and one idea. The idea was simple: <strong>do development differently and do it better</strong>. Don Mickelwait, John Buck, and Charlie Sweet called their new company Development Alternatives Incorporated. DAI.</p>
@@ -67,5 +65,6 @@ title: "Fifty Years. One Purpose. One DAI."
           Fifty years. One purpose. <strong>One DAI</strong>.
         </p>
       </div>
+    </div>
   </section>
 </div>
