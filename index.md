@@ -5,7 +5,6 @@ title: "Fifty Years. One Purpose. One DAI."
 <section class="hero is-light">
   <div class="hero-body">
     <div class="container">
-    <img id="fifty-logo" src="/assets/images/banner.png" alt="">
     </div>
   </div>
 </section>
