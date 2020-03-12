@@ -27,7 +27,7 @@ title: "Fifty Years. One Purpose. One DAI."
     </div>
   </div>
 </section>
-<section class="section">
+<section class="section" id="timeline">
   <div class="container">
     <h2 class="is-size-2 title">The DAI Timeline
       <hr class="bar">

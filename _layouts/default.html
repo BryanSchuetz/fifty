@@ -4,13 +4,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
+    <meta name="twitter:image" content="https://dai-fifty.netlify.com/assets/images/social-image.jpg">
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script type="text/javascript" src="/assets/js/site.js"></script>
     {% include svg-defs.html %}
   </head>
   <body>
-  <nav class="navbar" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="/">
       <svg viewBox="0 0 735 198" preserveAspectRatio="xMinYMax meet"><use xlink:href="#logo50"></use></svg>
@@ -24,7 +26,7 @@
   </div>
 
   <div id="navbarBasicExample" class=" navbar-menu is-right is-primary">
-    <div class="navbar-end">
+    <div class="navbar-end" onclick="activeNav(event)">
 
       <a class="navbar-item">
         50 Things
@@ -34,7 +36,7 @@
         Our Mosaic
       </a>
         <span class="item-divider">|</span>
-      <a href="" class="navbar-item">
+      <a href="/#timeline" class="navbar-item">
         History
       </a>
       <span class="item-divider">|</span>
