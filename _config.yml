@@ -23,7 +23,7 @@ defaults:
     path: ''
     type: artifacts
   values:
-    layout: default
+    layout: artifact
     title:
     summary: 
     image:

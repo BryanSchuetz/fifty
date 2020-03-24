@@ -23,42 +23,29 @@ permalink: /fifty-things
 <section class="section">
   <div class="container fifty-things">
   {%- for card in site.artifacts -%}
-  <div class="card card-grid">
-    <div class="front">
-      <div class="card-image">
-        <figure class="image is-4by4">
-          <img src="{{card.image}}" alt="Placeholder image">
-        </figure>
-      </div>
-      <div class="card-content">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">{{card.title}} </p>
-          </div>
+  <a href="{{card.url}}">
+    <div class="card card-grid">
+      <div class="front">
+        <div class="card-image">
+          <figure class="image is-4by4">
+            <img src="{{card.image}}" alt="Placeholder image">
+          </figure>
         </div>
-        <div class="content">
-        {{card.summary}}
+      </div>
+      <div class="back">
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <h3 class="title is-4">{{ card.title }}<hr class="bar"></h3>
+            </div>
+          </div>
+          <div class="content">
+          {{card.summary | truncate: 200, '...' }}
+          </div>
         </div>
       </div>
     </div>
-    <div class="back">
-      <div class="card-image">
-        <figure class="image is-4by4">
-          <img src="{{card.image}}" alt="Placeholder image">
-        </figure>
-      </div>
-      <div class="card-content">
-        <div class="media">
-          <div class="media-content">
-            <p class="title is-4">It's the back yo!</p>
-          </div>
-        </div>
-        <div class="content">
-        {{card.summary}}
-        </div>
-      </div>
-    </div>
-  </div>
+  </a>
   {%- endfor -%}
   </div>
 </section>
