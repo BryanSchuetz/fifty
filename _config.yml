@@ -17,7 +17,7 @@ collections:
   artifacts:
     title: Artifacts
     output: true
-    permalink: "/artifacts/:path"
+    permalink: "/fifty-things/:path"
 defaults: 
 - scope:
     path: ''

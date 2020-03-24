@@ -3,7 +3,7 @@ title: Fifty Things
 summary: |
   The story of DAI told through fifty seperate objects found in staff offices around the globe. 
 layout: default
-permalink: /fifty-things
+permalink: /fifty-things-grid
 --- 
 <section class="feature-wrap section">
   <div class="feature container">
