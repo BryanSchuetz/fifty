@@ -3,5 +3,28 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Fifty Years. One Purpose. One DAI." # the name of your site, e.g. ACME Corp.
 destination: "build"
 exclude:
-  - node_modules
-  - browser-sync.js
+- README.md
+- ".gitignore"
+- ".DS_Store"
+- vendor
+- node_modules
+- "/build"
+- browser-sync.js
+collections:
+   uploads:
+    title: Uploads
+    output: true
+  artifacts:
+    title: Artifacts
+    output: true
+    permalink: "/artifacts/:path"
+defaults: 
+- scope:
+    path: ''
+    type: artifacts
+  values:
+    layout: default
+    title:
+    summary: 
+    image:
+permalink: "/:title"
