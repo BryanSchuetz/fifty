@@ -8,6 +8,11 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
     <script type="text/javascript" src="/assets/js/site.js"></script>
     {% include svg-defs.html %}
   </head>
@@ -28,7 +33,7 @@
   <div id="navbarBasicExample" class=" navbar-menu is-right is-primary">
     <div class="navbar-end" onclick="activeNav(event)">
 
-      <a class="navbar-item">
+      <a href="/fifty-things" class="navbar-item {% if page.url contains "fifty-things"%}active-item {% endif %}">
         50 Things
       </a>
         <span class="item-divider">|</span>

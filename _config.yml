@@ -11,7 +11,7 @@ exclude:
 - "/build"
 - browser-sync.js
 collections:
-   uploads:
+  uploads:
     title: Uploads
     output: true
   artifacts:

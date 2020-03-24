@@ -208,3 +208,53 @@ iframe.timeline{
 #timeline{
   padding-top: 6rem;
 }
+
+// FIFTY THINGS
+
+.container.fifty-things{
+  @include clearfix;
+  width: 425px;
+  margin: auto;
+  max-width: 2000px;
+  @include responsive(wide-screens){
+    width: 800px;
+  }
+  @include responsive(in-betweeny-screens){
+    width: 1000px;
+  }
+  @include responsive(in-betweenyer-screens){
+    width: 1152px;
+  }
+  @include responsive(extra-ultra-wide-screens){
+    width: 1352px;
+  }
+}
+.card{
+  margin: 1rem;
+  float: left;
+  background-color: white;
+  @include responsive(wide-screens){
+    width: 350px;
+  }
+  @include responsive(in-betweeny-screens){
+    width: 300px;
+  }
+  @include responsive(in-betweenyer-screens){
+    width: 350px;
+  }
+  @include responsive(extra-ultra-wide-screens){
+    width: 418px;
+  }
+}
+
+// Flip
+
+.cardFace.back h1{
+ border-color:#91e600;
+}
+.front{
+  background-color: white;
+}
+.back{
+  background-color: white;
+}

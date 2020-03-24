@@ -62,6 +62,8 @@ $width-small: 480px; //6bits
 $width-medium: 600px; //8bits
 $width-wide: 800px; //10bits
 $width-ultra-wide: 960px; //12bits
+$width-in-betweeny: 1040px;
+$width-in-betweenyer: 1200px;
 $width-extra-ultra-wide: 1400px;
 
 $condensed-titles: proxima-nova-condensed;
@@ -95,6 +97,16 @@ $condensed-titles: proxima-nova-condensed;
   }
     @else if $width == extra-ultra-wide-screens{
       @media screen and (min-width: $width-extra-ultra-wide){
+        @content;
+      }
+    }
+    @else if $width == in-betweeny-screens{
+      @media screen and (min-width: $width-in-betweeny){
+        @content;
+      }
+    }
+    @else if $width == in-betweenyer-screens{
+      @media screen and (min-width: $width-in-betweenyer){
         @content;
       }
     }
