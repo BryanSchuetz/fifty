@@ -6,7 +6,9 @@ h1.title, h2.title, h3.title, h4.title, h5.title, h6.title{
   font-family: $family-primary;
   color: $grey-dark;
 }
-
+a:hover{
+  color: darken($color: $link, $amount: 10%);
+}
 img{
   margin-bottom: 1rem;
 }
@@ -135,6 +137,7 @@ blockquote{
   background-color: $grey-light;
   padding-left: 2rem;
   padding-right: 6rem;
+  padding-bottom: 3rem;
 }
 .feature{
   padding: 2rem 0 4rem 0;
@@ -143,13 +146,19 @@ blockquote{
     padding: 2rem 3rem 3rem 2rem;
     width: 104%;
     position: relative;
-    top: 2rem;
+    top: 4rem;
+    @include clearfix;
     img{
       width: 80%;
       display: block;
       margin: 0 auto 1rem auto;
     }
   }
+}
+.feature.container{
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
 }
 // .details{
 //   position: relative;
@@ -192,12 +201,19 @@ blockquote{
   border: 9px solid white;
   padding-top: 2rem;
   padding-left: 1.5rem;
+  @include clearfix;
   // width: 85%;
   // height: 70%;
   // position: absolute;
   // top: 3rem;
   // left: 3rem;
   // padding: 1rem;
+  .bar{
+    margin-bottom: 0; 
+  }
+  h1.title{
+    margin-bottom: 0;
+  }
 }
 .footer{
   background-color: $grey-dark;
@@ -210,6 +226,10 @@ iframe.timeline{
 }
 
 // FIFTY THINGS
+
+.fifty-section{
+
+}
 
 .container.fifty-things{
   @include clearfix;
@@ -234,7 +254,8 @@ iframe.timeline{
   float: left;
   height: 393px;
   width: 393px;
-  background-color: white;
+  background: transparent;
+  box-shadow: none;
   cursor: pointer;
   @include responsive(wide-screens){
     width: 350px;
@@ -257,12 +278,57 @@ iframe.timeline{
 // Flip
 
 .cardFace.back h1{
- border-color:#91e600;
+
 }
 .front{
-  background-color: white;
+  background-color: $grey-light;
+  box-shadow: 0px 2px 60px 0px rgba(160,179,198,0.47);
 }
 .back{
-  background-color: white;
+  background-color: $grey-light;
   min-height: 100%;
+  box-shadow: 0px 2px 60px 0px rgba(160,179,198,0.47);
+}
+.media.attribution{
+  display: none;
+  @include responsive(in-betweenyer-screens){
+    display: flex;
+  }
+}
+
+// Artifact Detail
+
+.media.full-attribution{
+  margin-top: 3rem;
+  img{
+    width: 80px;
+    heigth: 80px;
+  }
+}
+
+.feature--detail{
+  blockquote{
+    color: $grey;
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+    border-left: 1px solid $grey-dark;
+    background-image: none;
+  }
+}
+.nav-control{
+  position: fixed;
+  top: 40%;
+  &.left{
+    left: 2rem;
+  }
+  &.right{
+    right: 2rem;
+  }
+  a.empty{
+    color: rgba($color: $link, $alpha: .5);
+    &:hover{
+      color: rgba($color: $link, $alpha: .5);
+    }
+  }
+
 }

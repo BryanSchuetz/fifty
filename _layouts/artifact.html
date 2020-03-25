@@ -9,7 +9,42 @@ layout: default
       </h1>
       <div class="feature--detail">
         {{content}}
+        <div class="media full-attribution">
+          <div class="media-left">
+            <figure class="image is-50x50">
+              <img src="{{page.person-image}}" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-5">{{page.person}}</p>
+            <p class="subtitle is-6">{{page.person-title}}</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
+<div class="nav-control left">
+{%- assign prev = page.index | minus:1 -%}
+{%- assign prevThing = site.artifacts | where_exp:"thing", "thing.index == prev" -%}
+{%- if prevThing.size > 0 -%}
+  {%- for thing in prevThing -%}
+  <a href="{{thing.url}}"><i class="fa fa-arrow-circle-left fa-5x" aria-hidden="true"></i></a>
+  {%- endfor -%}
+  {%- else -%}
+  <a class="empty"><i class="fa fa-arrow-circle-left fa-5x" aria-hidden="true"></i></a>
+{%- endif -%}
+</div>
+
+
+<div class="nav-control right">
+  {%- assign next = page.index | plus:1 -%}
+  {%- assign nextThing = site.artifacts | where_exp:"thing", "thing.index == next" -%}
+  {%- if nextThing.size > 0 -%}
+    {%- for thing in nextThing -%}
+    <a href="{{thing.url}}"><i class="fa fa-arrow-circle-right fa-5x" aria-hidden="true"></i></a>
+    {%- endfor -%}
+  {%- else -%}
+    <a class="empty"><i class="fa fa-arrow-circle-right fa-5x" aria-hidden="true"></i></a>
+  {%- endif -%}
+</div>

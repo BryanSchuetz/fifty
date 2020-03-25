@@ -20,7 +20,7 @@ permalink: /fifty-things-grid
     </div>
   </div>
 </section>
-<section class="section">
+<section class="section fifty-section">
   <div class="container fifty-things">
   {%- for card in site.artifacts -%}
   <a href="{{card.url}}">
@@ -34,13 +34,20 @@ permalink: /fifty-things-grid
       </div>
       <div class="back">
         <div class="card-content">
-          <div class="media">
-            <div class="media-content">
-              <h3 class="title is-4">{{ card.title }}<hr class="bar"></h3>
-            </div>
-          </div>
           <div class="content">
-          {{card.summary | truncate: 200, '...' }}
+          <h3 class="title is-4">{{ card.title }}<hr class="bar"></h3>
+            {{card.summary | truncate:200}}
+          </div>
+          <div class="media attribution">
+            <div class="media-left">
+              <figure class="image is-48x48">
+                <img src="{{card.person-image}}" alt="person portrait">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title is-5">{{card.person}}</p>
+              <p class="subtitle is-6">{{card.person-title}}</p>
+            </div>
           </div>
         </div>
       </div>
