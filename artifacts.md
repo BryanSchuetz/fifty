@@ -8,7 +8,7 @@ permalink: /fifty-things-grid
 <section class="feature-wrap section">
   <div class="feature container">
     <div class="dai-box">
-      <h1 class="title is-size-2">
+      <h1 class="title is-size-4-mobile is-size-2-desktop">
         Fifty Things
         <hr class="bar">
       </h1>

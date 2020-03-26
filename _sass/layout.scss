@@ -136,22 +136,38 @@ blockquote{
 .feature-wrap{
   background-color: $grey-light;
   padding-left: 2rem;
-  padding-right: 6rem;
   padding-bottom: 3rem;
+  padding-right: 2rem;
+  @include responsive(medium-screens){
+    padding-right: 6rem;
+  }
 }
 .feature{
   padding: 2rem 0 4rem 0;
   &--detail{
     background-color: white;
-    padding: 2rem 3rem 3rem 2rem;
-    width: 104%;
-    position: relative;
-    top: 4rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    margin-top: 2rem;
+    @include responsive(medium-screens){
+      position: relative;
+      padding: 2rem 3rem 3rem 2rem;
+      width: 104%;
+      margin-top: 0;
+      top: 4rem;
+    }
     @include clearfix;
     img{
       width: 80%;
       display: block;
       margin: 0 auto 1rem auto;
+    }
+    blockquote{
+      color: $grey;
+      font-size: 1.4rem;
+      padding-left: 1.5rem;
+      border-left: 1px solid $grey-dark;
+      background-image: none;
     }
   }
 }
@@ -198,9 +214,13 @@ blockquote{
 //   }
 // }
 .dai-box{
-  border: 9px solid white;
-  padding-top: 2rem;
-  padding-left: 1.5rem;
+  border: 0px;
+  @include responsive(medium-screens){
+    border: 9px solid white;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+  }
+
   @include clearfix;
   // width: 85%;
   // height: 70%;
@@ -228,7 +248,10 @@ iframe.timeline{
 // FIFTY THINGS
 
 .fifty-section{
-
+  padding: 0;
+  @include responsive(medium-screens){
+    padding: 3rem 1.5rem;
+  }
 }
 
 .container.fifty-things{
@@ -303,16 +326,6 @@ iframe.timeline{
   img{
     width: 80px;
     heigth: 80px;
-  }
-}
-
-.feature--detail{
-  blockquote{
-    color: $grey;
-    font-size: 1.4rem;
-    padding-left: 1.5rem;
-    border-left: 1px solid $grey-dark;
-    background-image: none;
   }
 }
 .nav-control{

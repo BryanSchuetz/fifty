@@ -11,12 +11,12 @@ title: "Fifty Years. One Purpose. One DAI."
 <section class="feature-wrap">
   <div class="feature container">
     <div class="dai-box">
-      <h1 class="title is-size-2">
+      <h1 class="title is-size-4-mobile is-size-2-desktop">
         FIFTY YEARS. ONE PURPOSE. ONE DAI.
         <hr class="bar">
       </h1>
       <div class="feature--detail">
-        <h2 class="title">Our Story
+        <h2 class="title is-size-5-mobile is-size-3-desktop">Our Story
           <hr class="bar">
         </h2>
         <p>Fifty years ago, DAI was three founders and one idea. The idea was simple: <strong>do development differently and do it better</strong>. Don Mickelwait, John Buck, and Charlie Sweet called their new company Development Alternatives Incorporated. DAI.</p>
@@ -29,7 +29,7 @@ title: "Fifty Years. One Purpose. One DAI."
 </section>
 <section class="section" id="timeline">
   <div class="container">
-    <h2 class="is-size-2 title">The DAI Timeline
+    <h2 class="title is-size-4-mobile is-size-2-desktop">The DAI Timeline
       <hr class="bar">
     </h2>
     <a target="blank" href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Nvp3gPaPdAHkZGQqAK3McDCz__ybSQ1wLwUqYq2S8AA&font=Default&lang=en&timenav_position=top&hash_bookmark=true&initial_zoom=2" class="timeline-link"><img src="/assets/images/timeline.gif" alt=""></a>

@@ -11,12 +11,12 @@ title: "Fifty Years. One Purpose. One DAI."
 <div class="feature-wrap">
   <section class="feature container">
     <div class="dai-box">
-      <h1 class="title is-size-2">
+      <h1 class="title is-size-4-mobile is-size-2-desktop">
         FIFTY YEARS. ONE PURPOSE. ONE DAI.
         <hr class="bar" id="our-story">
       </h1>
       <div class="feature--detail">
-        <h2 class="title">Our Story
+        <h2 class="title is-size-5-mobile is-size-3-desktop">Our Story
           <hr class="bar">
         </h2>
         <p>Fifty years ago, DAI was three founders and one idea. The idea was simple: <strong>do development differently and do it better</strong>. Don Mickelwait, John Buck, and Charlie Sweet called their new company Development Alternatives Incorporated. DAI.</p>
