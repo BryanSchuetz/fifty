@@ -229,7 +229,7 @@ blockquote{
   // left: 3rem;
   // padding: 1rem;
   .bar{
-    margin-bottom: 0; 
+    margin-bottom: 0;   
   }
   h1.title{
     margin-bottom: 0;
@@ -332,11 +332,20 @@ iframe.timeline{
   position: fixed;
   top: 40%;
   &.left{
-    left: 2rem;
+    left: .1rem;
   }
   &.right{
-    right: 2rem;
+    right: .1rem;
   }
+  @include responsive(medium-screens){
+    &.left{
+    left: 2rem;
+    }
+    &.right{
+      right: 2rem;
+    }
+  }
+  
   a.empty{
     color: rgba($color: $link, $alpha: .5);
     &:hover{
