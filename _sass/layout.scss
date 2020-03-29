@@ -68,11 +68,11 @@ h1, h2, h3{
   }
   &.is-size-1 .bar{
     width: 3rem;
-    border-bottom: .9rem solid;
+    border-bottom: 1em solid;
   }
   &.is-size-2 .bar{
     width: 2.8rem;
-    border-bottom: .5rem solid;
+    border-bottom: .8em solid;
   }
 }
 blockquote{
@@ -114,7 +114,10 @@ blockquote{
 .navbar-item{
   text-transform: uppercase;
 }
-.hero-body{
+.hero-body div.container{
+  max-width: 960px;
+}
+.hero-body.home{
   background-image: url(/assets/images/banner.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -246,7 +249,19 @@ iframe.timeline{
 }
 
 // FIFTY THINGS
+.hero-body.artifacts{
+  background-color: #C8DAEB;
 
+}
+.hero.artifact-detail{
+  height: 15rem;
+  @include responsive(medium-screens){
+    height: 20rem;
+  }
+  @include responsive(wide-screens){
+    height: 30rem;
+  }
+}
 .fifty-section{
   padding: 0;
   @include responsive(medium-screens){
@@ -299,7 +314,12 @@ iframe.timeline{
 }
 
 // Flip
-
+.card-grid a{
+  color: $grey;
+  &:hover{
+    color: $grey;
+  }
+}
 .cardFace.back h1{
 
 }
@@ -320,7 +340,21 @@ iframe.timeline{
 }
 
 // Artifact Detail
+.artifact-detail{
+  .hero-body{
+    background-color: none;
+    background-position: center;
+    background-size: cover;
+  }
+}
 
+.artifact-detail--body{
+  backgournd-color: white;
+  img{
+    width: 100%;
+    margin: auto;
+  }
+}
 .media.full-attribution{
   margin-top: 3rem;
   img{
@@ -330,7 +364,7 @@ iframe.timeline{
 }
 .nav-control{
   position: fixed;
-  top: 40%;
+  top: 20%;
   &.left{
     left: .1rem;
   }

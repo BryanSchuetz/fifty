@@ -5,7 +5,20 @@ summary: |
 layout: default
 permalink: /fifty-things-grid
 --- 
-<section class="feature-wrap section">
+<section class="hero bold">
+  <div class="hero-body artifacts">
+    <div class="container">
+      <h1 class="title is-size-4-mobile is-size-2-desktop">
+        Fifty Things
+        <hr class="bar">
+      </h1>
+        <p>Look around any DAI office, and you’ll see more than computers and cubicles. Over the years, our desks, walls, shelves, and photo albums have accumulated a wide range of…stuff. Far from simple office clutter, these “artifacts” represent 50 years of stories and impact.</p> 
+        <p>Maybe it’s the piece of art you picked up on a field visit. The leftover water testing kit from a project that made a difference. The inflatable unicorn you were given as an inside joke from a colleague who inspired you. The 20-year old winning proposal you can’t bring yourself to throw away. </p>
+        <p>To celebrate 50 years, we're telling our story through the detail of fifty such artifacts. As the story unfolds below, you'll find that across all of these people, places, and projects one thing has remaind constant: our mission. To help people improve their lives</p>
+    </div>
+  </div>
+</section>
+<!-- <section class="feature-wrap section">
   <div class="feature container">
     <div class="dai-box">
       <h1 class="title is-size-4-mobile is-size-2-desktop">
@@ -19,11 +32,10 @@ permalink: /fifty-things-grid
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <section class="section fifty-section">
   <div class="container fifty-things">
   {%- for card in site.artifacts -%}
-  <a href="{{card.url}}">
     <div class="card card-grid">
       <div class="front">
         <div class="card-image">
@@ -33,6 +45,7 @@ permalink: /fifty-things-grid
         </div>
       </div>
       <div class="back">
+      <a href="{{card.url}}">
         <div class="card-content">
           <div class="content">
           <h3 class="title is-4">{{ card.title }}<hr class="bar"></h3>
@@ -50,15 +63,15 @@ permalink: /fifty-things-grid
             </div>
           </div>
         </div>
+      </a>
       </div>
     </div>
-  </a>
   {%- endfor -%}
   </div>
 </section>
 <script>
 $(".card-grid").flip({
-          trigger: 'hover'
+          trigger: 'click'
         });
 
         $(".flip-btn").click(function(){

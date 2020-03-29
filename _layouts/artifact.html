@@ -1,8 +1,17 @@
 ---
 layout: default
 ---
-<section class="feature-wrap section">
-  <div class="feature container">
+<section class="hero bold artifact-detail">
+  <div class="hero-body artifacts" style="background-image: url({{page.illustration}}) ;">
+    <div class="container">
+      
+    </div>
+  </div>
+</section>
+
+
+{%- comment -%} <section class="feature-wrap section">
+  <div class="feature container" >
     <div class="dai-box">
       <h1 class="title is-size-4-mobile is-size-2-desktop">{{page.title}}
         <hr class="bar">
@@ -22,6 +31,25 @@ layout: default
         </div>
       </div>
     </div>
+  </div>
+</section> {%- endcomment -%}
+<section class="section artifact-detail--body ">
+  <div class="container">
+    <h1 class="title is-size-4-mobile is-size-2-desktop">{{page.title}}
+      <hr class="bar">
+    </h1>
+    {{content}}
+    <div class="media full-attribution">
+          <div class="media-left">
+            <figure class="image is-50x50">
+              <img src="{{page.person-image}}" alt="Placeholder image">
+            </figure>
+          </div>
+          <div class="media-content">
+            <p class="title is-5">{{page.person}}</p>
+            <p class="subtitle is-6">{{page.person-title}}</p>
+          </div>
+        </div>
   </div>
 </section>
 <div class="nav-control left">

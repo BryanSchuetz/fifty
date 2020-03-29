@@ -2,12 +2,6 @@
 layout: default
 title: "Fifty Years. One Purpose. One DAI."
 ---
-<section class="hero is-light">
-  <div class="hero-body">
-    <div class="container">
-    </div>
-  </div>
-</section>
 <div class="feature-wrap">
   <section class="feature container">
     <div class="dai-box">

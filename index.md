@@ -3,7 +3,7 @@ layout: default
 title: "Fifty Years. One Purpose. One DAI."
 ---
 <section class="hero is-light">
-  <div class="hero-body">
+  <div class="hero-body home">
     <div class="container">
     </div>
   </div>

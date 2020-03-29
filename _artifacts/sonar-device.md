@@ -1,6 +1,7 @@
 ---
 title: Sonar Device
 image: https://picsum.photos/900?random=4
+illustration: /assets/images/artifacts/illustrations/unicorn.jpg
 summary: |
   ‘Comrades!’ cried an eager youthful voice. ‘Attention, comrades! We have glorious news for you. We have won the battle for production! Returns now completed of the output of all classes of consumption goods show that the standard of living has risen by no less than 20 per cent over the past year. 
 index: 3
