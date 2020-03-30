@@ -32,6 +32,6 @@ title: "Fifty Years. One Purpose. One DAI."
     <h2 class="title is-size-4-mobile is-size-2-desktop">The DAI Timeline
       <hr class="bar">
     </h2>
-    <a target="blank" href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Nvp3gPaPdAHkZGQqAK3McDCz__ybSQ1wLwUqYq2S8AA&font=Default&lang=en&timenav_position=top&hash_bookmark=true&initial_zoom=2" class="timeline-link"><img src="/assets/images/timeline.gif" alt=""></a>
+    <a target="blank" href="https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1Nvp3gPaPdAHkZGQqAK3McDCz__ybSQ1wLwUqYq2S8AA&font=Default&lang=en&timenav_position=top&hash_bookmark=true&initial_zoom=2#event-founding" class="timeline-link"><img src="/assets/images/timeline.png" alt=""></a>
   </div> 
 </section>
