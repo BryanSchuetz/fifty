@@ -5,8 +5,24 @@ summary: |
 layout: default
 permalink: /mosaic
 --- 
-
-# Our Mosaic
-
-To celebrate DAI's fiftieth anniversary, we've gathered photographs from thousands of DAI staff, to compile...
-
+<section class="hero bold">
+  <div class="hero-body artifacts">
+    <div class="container">
+      <h1 class="title is-size-4-mobile is-size-2-desktop">
+        Our Mosaic
+        <hr class="bar">
+      </h1>
+        <p>To celebrate DAI's fiftieth anniversary, we've gathered photographs from thousands of DAI staff...</p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div id="pictureMosaicsEmbed"></div>
+        <script src="https://www.picturemosaics.com/photo-mosaic-tool/js/mosaicEmbed.js"></script>
+        <script>
+        var pmFrame = new Pmframe({element: "pictureMosaicsEmbed", paddingBottom: '36.5930%', uid: 'M2673331', pid: 'p0', stor: 's4/v92', width: '100%', height: '100%', displayOrder: 1});
+        pmFrame.init();
+        </script>
+  </div>
+</section>
