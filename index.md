@@ -27,6 +27,14 @@ title: "Fifty Years. One Purpose. One DAI."
     </div>
   </div>
 </section>
+<section class="video-message">
+  <div class="container">
+  <figure class="image is-16by9">
+    <iframe class="has-ratio" src="https://player.vimeo.com/video/414889956?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+  </figure>
+  
+  </div>
+</section>
 <section class="section" id="timeline">
   <div class="container">
     <h2 class="title is-size-4-mobile is-size-2-desktop">The DAI Timeline
