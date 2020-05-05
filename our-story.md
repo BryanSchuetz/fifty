@@ -16,8 +16,9 @@ title: "Fifty Years. One Purpose. One DAI."
         <p>Fifty years ago, DAI was three founders and one idea. The idea was simple: <strong>do development differently and do it better</strong>. Don Mickelwait, John Buck, and Charlie Sweet called their new company Development Alternatives Incorporated. DAI.</p>
         <img src="/assets/images/founders.jpg" alt="">
         <p>In the five decades since that day in May 1970, we have worked in virtually every country on the planet (still waiting on you Taiwan). Despite some false starts and failed experiments, we have enjoyed enormous success and grown beyond the wildest dreams of the founders. We have evolved beyond all recognition.</p>
-        But one thing has remained constant: our mission. To help people improve their lives.
-        
+        <p>
+          But one thing has remained constant: our mission. To help people improve their lives.
+        </p>
         <p>
           When you ask DAI staff why they come to DAI, why they stay, and what they love about it, the answer is remarkably
           consistent: it’s the work we do and the people we do it with—the colleagues, counterparts, consultants, clients, and
