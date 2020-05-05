@@ -136,6 +136,25 @@ blockquote{
     height: 50rem;
   }
 }
+.hero-body.mosaic{
+  background-image: url(/assets/images/mosaic-banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 10rem;
+  @include responsive(medium-screens){
+    height: 15rem;
+  }
+  @include responsive(wide-screens){
+    height: 20rem;
+  }
+  @include responsive(ultra-wide-screens){
+    height: 30rem;
+  }
+  @include responsive(extra-ultra-wide-screens){
+    height: 40rem;
+  }
+}
 .feature-wrap{
   background-color: $grey-light;
   padding-left: 2rem;

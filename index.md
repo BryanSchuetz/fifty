@@ -27,12 +27,13 @@ title: "Fifty Years. One Purpose. One DAI."
     </div>
   </div>
 </section>
-<section class="video-message">
+<section class="video-message section">
   <div class="container">
+  <h2 class="title is-size-5-mobile is-size-3-desktop">A Message from Don Mickelwait</h2>
   <figure class="image is-16by9">
     <iframe class="has-ratio" src="https://player.vimeo.com/video/414889956?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
   </figure>
-  
+  <p style="margin-top: 2rem;">Don Mickelwait is one of DAI’s three founders and a former CEO of the firm. We were delighted to receive this video from Don on the occasion of our fiftieth anniversary. Thank you, Don, for this gracious message, and for everything you have done to make DAI what it is today.</p>
   </div>
 </section>
 <section class="section" id="timeline">
