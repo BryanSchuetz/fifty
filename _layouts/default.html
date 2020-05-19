@@ -32,7 +32,9 @@
 
   <div id="navbarBasicExample" class=" navbar-menu is-right is-primary">
     <div class="navbar-end" onclick="activeNav(event)">
-
+      <a href="/ceo-message" class="navbar-item {% if page.url contains "ceo-message"%}active-item {% endif %}">
+        CEO Message
+      </a>
       <a href="/mosaic" class="navbar-item {% if page.url contains "mosaic"%}active-item {% endif %}">
         Our Mosaic
       </a>
