@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/BryanSchuetz/dai-bulma#readme",
   "devDependencies": {
-    "gulp": "3.9.1",
+    "gulp": "4.0.2",
     "browser-sync": "2.26.7",
     "gulp-shell": "0.5.2",
     "gulp-uglify": "1.5.4"
